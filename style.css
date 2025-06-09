@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Noto Sans JP', sans-serif;
+  overflow-x: hidden;
+}
+
+/* アニメーション */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-text {
+  color: white;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  transform: translateY(20px);
+  animation: slideUp 1s ease forwards;
+}
+
+
+/* 上海観光スライドの見出し */
+.shanghai-overlay {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shanghai-title {
+  color: white;
+  font-size: 3em;
+  font-weight: bold;
+  text-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+  padding: 1rem 2rem;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+}
+
+/* スケジュール表のスタイル */
+.schedule-table {
+  width: 90%;
+  margin: 0.5em auto;
+  border-collapse: collapse;
+  color: #000;
+  font-size: 0.95em;
+}
+
+.schedule-table th, .schedule-table td {
+  border: 1px solid #555;
+  padding: 0.3em 0.6em;
+  text-align: left;
+}
+
+.schedule-table th {
+  background: #f0f0f0;
+}
